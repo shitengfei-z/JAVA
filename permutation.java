@@ -1,13 +1,34 @@
-/*
-±àĞ´Ò»¸ö³ÌĞò£¬Êä³ö×Ö·û´®"abcdefgh"µÄÈ«ÅÅÁĞ¡££¨ÌáÊ¾£º¿É¿¼ÂÇµİ¹é£©
-*/
+
+ç¼–å†™ä¸€ä¸ªç¨‹åºï¼Œè¾“å‡ºå­—ç¬¦ä¸²abcdefghçš„å…¨æ’åˆ—ã€‚ï¼ˆæç¤ºï¼šå¯è€ƒè™‘é€’å½’ï¼‰
+
 public class permutation{
+	public static int total = 0;  
 	public static void main(String[] args){
-		char m;
-		char[] chars={'a','b','c'};
-		
-                //´òÓ¡charsµÄÈ«ÅÅÁĞ		
+		//char m;
+		char[] chars={'a','b','c','d','e','f','g','h'};
+	  //æ‰“å°charsçš„å…¨æ’åˆ—		
 		permutate(chars,0);
+		System.out.println(total); //ç»Ÿè®¡æ€»æ•°
 	}
+	public static void permutate(char[] chars, int i) {
+         if (i = chars.length)
+             return;
+         if (i == chars.length - 1) {
+             System.out.println(String.valueOf(chars));
+             total++;
+         } else {
+             for (int j = i; j  chars.length; j++) {
+                 char temp = chars[j];
+                 chars[j] = chars[i];
+                 chars[i] = temp;
+ 
+                 permutate(chars, i + 1);
+ 
+                 temp = chars[j];
+                 chars[j] = chars[i];
+                 chars[i] = temp;
+             }
+         }
+     }
 			
 }
