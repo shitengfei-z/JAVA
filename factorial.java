@@ -1,11 +1,12 @@
-/*
-±àĞ´Ò»¸ö³ÌĞò£¬¼ÆËã×ÔÈ»ÊınµÄ½×³Ën!¡££¨ÌáÊ¾£º¿ÉÓÃÑ­»·Íê³É£©
-*/
+import java.util.Scanner;   //å¯¼åŒ…
 public class factorial{
 	 public static void main(String[] args){
-         //½«args[0]×ª»»Îª½×Êın
-         
-         //Ñ­»·¼ÆËãn!£¬·µ»Ø½á¹û
-	 	 
+	 	Scanner scanner = new Scanner(System.in); //ä»é”®ç›˜è¾“å…¥æ•°å€¼
+	 	int n = scanner.nextInt();  //å®šä¹‰é˜¶æ•°n
+	 	int result = 1;
+	 	for(int i=1;i<=n;i++){
+	 		result*=i;
+	 		}
+	 	System.out.println("the factorial of"+n+"is"+result); //æ‰“å°ç»“æœ
 	}
 }
