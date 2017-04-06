@@ -1,28 +1,56 @@
 /*
-±àĞ´Ò»¸ö±íÊ¾¶şÎ¬Æ½ÃæÉÏµÄµãµÄÀàMyPoint£¬Âú×ãÒÔÏÂÌõ¼ş£º
-£¨1£©¶¨ÒåprivateµÄ³ÉÔ±±äÁ¿xºÍy£¬±íÊ¾µãµÄxºÍy×ø±ê£¬ÀàĞÍÎªdouble
-£¨2£©¶¨ÒåÁ½¸öMyPointµÄ¹¹Ôì·½·¨£¬Ò»¸ö¹¹Ôì·½·¨²»´ø²ÎÊı£¬¶øÇÒxºÍyµÄ³õÊ¼ÖµÎª0£¬ÁíÒ»¸ö¹¹Ôì·½·¨ÓĞÁ½¸ö²ÎÊı£¬²ÎÊıÃûÎªxºÍy£¬ÀàĞÍÎªdouble£¬ÓÃÕâÁ½¸ö²ÎÊı·Ö±ğ×÷Îª³õÊ¼xºÍy×ø±ê
-£¨3£©¶¨ÒåÒ»¸ögetD·½·¨£¬ÓĞÒ»¸öÀàĞÍÎªMyPointµÄ¶ÔÏó²ÎÊı£¬¹¦ÄÜÎª·µ»Øµ±Ç°¶ÔÏóºÍ²ÎÊı¶ÔÏóÕâÁ½¸ö×ø±êµãµÄ¾àÀë£¬·µ»ØÖµÎªdoubleÀàĞÍ
-£¨4£©±àĞ´²âÊÔµÄmain·½·¨£¬µ÷ÓÃgetD¼ÆËãÁ½¸öµãÖ®¼äµÄ¾àÀë
+ç¼–å†™ä¸€ä¸ªè¡¨ç¤ºäºŒç»´å¹³é¢ä¸Šçš„ç‚¹çš„ç±»MyPointï¼Œæ»¡è¶³ä»¥ä¸‹æ¡ä»¶ï¼š
+ï¼ˆ1ï¼‰å®šä¹‰privateçš„æˆå‘˜å˜é‡xå’Œyï¼Œè¡¨ç¤ºç‚¹çš„xå’Œyåæ ‡ï¼Œç±»å‹ä¸ºdouble
+ï¼ˆ2ï¼‰å®šä¹‰ä¸¤ä¸ªMyPointçš„æ„é€ æ–¹æ³•ï¼Œä¸€ä¸ªæ„é€ æ–¹æ³•ä¸å¸¦å‚æ•°ï¼Œè€Œä¸”xå’Œyçš„åˆå§‹å€¼ä¸º0ï¼Œå¦ä¸€ä¸ªæ„é€ æ–¹æ³•æœ‰ä¸¤ä¸ªå‚æ•°ï¼Œå‚æ•°åä¸ºxå’Œyï¼Œç±»å‹ä¸ºdoubleï¼Œç”¨è¿™ä¸¤ä¸ªå‚æ•°åˆ†åˆ«ä½œä¸ºåˆå§‹xå’Œyåæ ‡
+ï¼ˆ3ï¼‰å®šä¹‰ä¸€ä¸ªgetDæ–¹æ³•ï¼Œæœ‰ä¸€ä¸ªç±»å‹ä¸ºMyPointçš„å¯¹è±¡å‚æ•°ï¼ŒåŠŸèƒ½ä¸ºè¿”å›å½“å‰å¯¹è±¡å’Œå‚æ•°å¯¹è±¡è¿™ä¸¤ä¸ªåæ ‡ç‚¹çš„è·ç¦»ï¼Œè¿”å›å€¼ä¸ºdoubleç±»å‹
+ï¼ˆ4ï¼‰ç¼–å†™æµ‹è¯•çš„mainæ–¹æ³•ï¼Œè°ƒç”¨getDè®¡ç®—ä¸¤ä¸ªç‚¹ä¹‹é—´çš„è·ç¦»
 
- ÊäÈë£º
- ÊäÈë2ĞĞÊı¾İ£¬ ×Ü¹²4¸öÓĞÀíÊı¡£Ã¿2¸öÊı¾İÒ»×é£¬±íÊ¾Ò»¸öµãµÄxºÍy×ø±ê£¬Ã¿ĞĞµÄ2¸öÊı¾İÓÃ¿Õ¸ñ¸ô¿ª¡£ÀıÈç£º
+ è¾“å…¥ï¼š
+ è¾“å…¥2è¡Œæ•°æ®ï¼Œ æ€»å…±4ä¸ªæœ‰ç†æ•°ã€‚æ¯2ä¸ªæ•°æ®ä¸€ç»„ï¼Œè¡¨ç¤ºä¸€ä¸ªç‚¹çš„xå’Œyåæ ‡ï¼Œæ¯è¡Œçš„2ä¸ªæ•°æ®ç”¨ç©ºæ ¼éš”å¼€ã€‚ä¾‹å¦‚ï¼š
  200.1 200.2
  200.3 200.4
 
-Êä³ö£º
- Êä³öÁ½¸öµãÖ®¼äµÄ¾àÀë¡£ÀıÈç£º
+è¾“å‡ºï¼š
+ è¾“å‡ºä¸¤ä¸ªç‚¹ä¹‹é—´çš„è·ç¦»ã€‚ä¾‹å¦‚ï¼š
  0.28284271247464315
 */
+import java.util.Scanner;
 public class points{
 	public static void main(String[] args){
         
-        //»ñµÃÁ½¸öµã×ù±êµÄÊäÈë
-        Scanner input=new Scanner(System.in); 
-	String point1=input.nextLine();
-                  
-
-        //Êä³öÁ½¸öµãÖ®¼äµÄ¾àÀë
+        //è·å¾—ä¸¤ä¸ªç‚¹åº§æ ‡çš„è¾“å…¥
+    Scanner input=new Scanner(System.in); 
+	  //String point1=input.nextLine();
+	  double x1,y1;
+	     double x2,y2;
+	  x1=input.nextDouble();
+	  y1=input.nextDouble();
+	  x2=input.nextDouble();
+    y2=input.nextDouble();
+    MyPoint p1=new MyPoint(x1,y1);
+    MyPoint p2=new MyPoint(x2,y2);
+    double dist=p2.getD(p1);
+    System.out.println(dist);                
+        //è¾“å‡ºä¸¤ä¸ªç‚¹ä¹‹é—´çš„è·ç¦»
  
 	}
 }
+  class MyPoint{
+  	 private double x,y;
+    MyPoint(){
+        x=0;
+        y=0;
+    }
+    MyPoint(double x,double y){
+        this.x=x;
+        this.y=y;
+    }
+    public double getX(){return x;}
+    public double getY(){return y;}
+    public double getD(MyPoint p){
+        double deltaX=this.x-p.getX();
+        double deltaY=this.y-p.getY();
+        double dist=deltaX*deltaX+deltaY*deltaY;
+        return Math.sqrt(dist);
+    }
+  	}
